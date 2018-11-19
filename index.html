@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="js/process.js"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<form action="config.php" method="POST" name="myform">
+<h4>One Cost : 250<h4>
+NO.of items : <input type="number" id="items" name="items" placeholder="Enter items quantity" required/>
+<!-- <input type="number" id="money" name="money" placeholder="Enter Money"/> -->
+<br>
+<input type="button" value="calculate" onclick="Calculate()" class="btn btn-primary">
+<h4 id="sum"></h4>
+<button id="rzp-button1" class="btn btn-success" onclick="amountCal()">Proceed to pay</button>
+</form>  
+</body>
+</html>
